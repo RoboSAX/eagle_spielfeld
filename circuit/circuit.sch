@@ -15536,12 +15536,12 @@ Based on the following sources:
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="120"/>
 </parts>
 <sheets>
 <sheet>
@@ -15711,12 +15711,12 @@ pushed button</text>
 <instance part="R5" gate="G$1" x="347.98" y="142.24"/>
 <instance part="R6" gate="G$1" x="347.98" y="137.16"/>
 <instance part="R7" gate="G$1" x="320.04" y="99.06"/>
-<instance part="R8" gate="G$1" x="320.04" y="93.98"/>
 <instance part="R9" gate="G$1" x="320.04" y="88.9"/>
 <instance part="R10" gate="G$1" x="320.04" y="83.82"/>
 <instance part="R11" gate="G$1" x="320.04" y="78.74"/>
 <instance part="R12" gate="G$1" x="355.6" y="99.06"/>
 <instance part="R13" gate="G$1" x="355.6" y="93.98"/>
+<instance part="R8" gate="G$1" x="322.58" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -16287,14 +16287,14 @@ pushed button</text>
 </net>
 <net name="RETURN_BTN_DATA" class="0">
 <segment>
-<wire x1="330.2" y1="58.42" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="326.39" y="59.69" size="1.778" layer="91" rot="R180"/>
-<pinref part="SV2" gate="G$1" pin="3"/>
+<label x="313.69" y="59.69" size="1.778" layer="91" rot="R180"/>
+<wire x1="317.5" y1="58.42" x2="314.96" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="F" pin="I"/>
-<wire x1="228.6" y1="33.02" x2="231.14" y2="33.02" width="0.1524" layer="91"/>
-<label x="232.41" y="31.75" size="1.778" layer="91"/>
+<pinref part="ICM" gate="G$1" pin="PB0(ICP)"/>
+<wire x1="93.98" y1="38.1" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
+<label x="99.06" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RETURN_LED_DATA" class="0">
@@ -16338,13 +16338,22 @@ pushed button</text>
 <net name="BUS_BTN_DATA" class="0">
 <segment>
 <label x="311.15" y="95.25" size="1.778" layer="91" rot="R180"/>
-<wire x1="314.96" y1="93.98" x2="312.42" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="327.66" y1="93.98" x2="327.66" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="G$1" pin="3"/>
+<wire x1="327.66" y1="91.44" x2="330.2" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="93.98" x2="325.12" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="93.98" x2="327.66" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="93.98" x2="312.42" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ICM" gate="G$1" pin="PD2(INT0)"/>
 <wire x1="96.52" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
 <label x="97.79" y="54.61" size="1.778" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="F" pin="I"/>
+<wire x1="228.6" y1="33.02" x2="231.14" y2="33.02" width="0.1524" layer="91"/>
+<label x="232.41" y="31.75" size="1.778" layer="91"/>
 </segment>
 </net>
 <net name="BUS_RGB" class="0">
@@ -16437,15 +16446,6 @@ pushed button</text>
 <wire x1="325.12" y1="99.06" x2="330.2" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="99.06" x2="330.2" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="325.12" y1="93.98" x2="327.66" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="327.66" y1="93.98" x2="327.66" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="G$1" pin="3"/>
-<wire x1="327.66" y1="91.44" x2="330.2" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -16614,6 +16614,13 @@ pushed button</text>
 <pinref part="RLD4" gate="G$1" pin="2"/>
 <pinref part="LD4" gate="LED" pin="A"/>
 <wire x1="195.58" y1="33.02" x2="193.04" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="SV2" gate="G$1" pin="3"/>
+<wire x1="330.2" y1="58.42" x2="327.66" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
