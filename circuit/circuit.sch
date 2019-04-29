@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -55,15 +55,15 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Hidden" color="15" fill="1" visible="no" active="yes"/>
 <layer number="102" name="Changes" color="12" fill="1" visible="no" active="yes"/>
 <layer number="103" name="Stiffner" color="6" fill="3" visible="no" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
-<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="BGA-Top" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="BD-Top" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
@@ -15560,7 +15560,7 @@ Based on the following sources:
 <wire x1="147.32" y1="121.92" x2="147.32" y2="200.66" width="0.3048" layer="94" style="longdash"/>
 <text x="53.34" y="190.5" size="5.08" layer="94">Programmer</text>
 <text x="322.58" y="190.5" size="5.08" layer="94">Out Display</text>
-<text x="320.04" y="111.76" size="5.08" layer="94">In/Out Lights</text>
+<text x="320.04" y="111.76" size="5.08" layer="94">In/Out Bus</text>
 <wire x1="287.02" y1="121.92" x2="388.62" y2="121.92" width="0.3048" layer="94" style="longdash"/>
 <wire x1="147.32" y1="0" x2="147.32" y2="121.92" width="0.3048" layer="94" style="longdash"/>
 <text x="208.28" y="190.5" size="5.08" layer="94">Logic</text>
